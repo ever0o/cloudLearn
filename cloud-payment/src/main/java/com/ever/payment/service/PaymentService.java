@@ -1,0 +1,17 @@
+package com.ever.payment.service;
+
+import com.ever.payment.entitys.PaymentVo;
+import org.apache.ibatis.annotations.Param;
+
+/**
+ * @author WangY
+ * @Title:
+ * @Package
+ * @Description:
+ * @date 2020/9/1814:33
+ */
+public interface PaymentService {
+    PaymentVo selectById(@Param("id") Integer id);
+
+    void savePaymentVo(PaymentVo paymentVo);
+}

@@ -1,4 +1,4 @@
-package com.ever.payment.entitys;
+package com.ever.cosumer.entitys;
 
 import lombok.Data;
 

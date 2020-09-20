@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ever.payment.dao.PaymentDao">
 
-    <resultMap id="paymentMap" type="com.ever.payment.entitys.PaymentVo">
+    <resultMap id="paymentMap" type="com.ever.cosumer.entitys.PaymentVo">
         <id column="id" property="id"/>
         <id column="serial" property="serial"/>
     </resultMap>
@@ -13,7 +13,7 @@
         select c.id , c.serial from c_payment c where c.id = #{id};
     </select>
 
-    <insert id="savePaymentVo" parameterType="com.ever.payment.entitys.PaymentVo" useGeneratedKeys="true" keyProperty="id">
+    <insert id="savePaymentVo" parameterType="com.ever.cosumer.entitys.PaymentVo" useGeneratedKeys="true" keyProperty="id">
         insert into c_payment(serial) values (#{serial});
     </insert>
 

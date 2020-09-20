@@ -1,7 +1,7 @@
 package com.ever.payment.service.impl;
 
+import com.ever.cosumer.entitys.PaymentVo;
 import com.ever.payment.dao.PaymentDao;
-import com.ever.payment.entitys.PaymentVo;
 import com.ever.payment.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

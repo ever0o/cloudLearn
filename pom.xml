@@ -10,6 +10,8 @@
   <modules>
     <module>cloud-payment</module>
     <module>cloud-cosumer</module>
+      <module>cloud-api-commons</module>
+      <module>cloud-eureka-server</module>
   </modules>
   <packaging>pom</packaging>
 

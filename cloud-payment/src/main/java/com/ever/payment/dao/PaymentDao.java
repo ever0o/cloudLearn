@@ -1,6 +1,6 @@
 package com.ever.payment.dao;
 
-import com.ever.payment.entitys.PaymentVo;
+import com.ever.cosumer.entitys.PaymentVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

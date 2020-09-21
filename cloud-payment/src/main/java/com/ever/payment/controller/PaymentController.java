@@ -35,7 +35,7 @@ public class PaymentController {
     public CommonResult getPaymentById(@PathVariable("id") Integer id){
 
         PaymentVo vo = paymentService.selectById(id);
-
+        log.info("查询成功");
         return new CommonResult(200,"查询成功",vo);
     }
 }

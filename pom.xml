@@ -9,9 +9,11 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>cloud-payment</module>
-    <module>cloud-cosumer</module>
-      <module>cloud-api-commons</module>
-      <module>cloud-eureka-server</module>
+    <module>cloud-consumer</module>
+    <module>cloud-api-commons</module>
+    <module>cloud-eureka-server</module>
+    <module>cloud-eureka-server-2</module>
+    <module>cloud-eureka-server-3</module>
   </modules>
   <packaging>pom</packaging>
 

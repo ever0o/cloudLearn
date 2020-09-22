@@ -1,8 +1,8 @@
-package com.ever.payment.controller;
+package com.ever.springcloud.controller;
 
 import com.ever.cosumer.entitys.CommonResult;
 import com.ever.cosumer.entitys.PaymentVo;
-import com.ever.payment.service.PaymentService;
+import com.ever.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

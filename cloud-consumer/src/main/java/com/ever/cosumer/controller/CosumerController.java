@@ -13,17 +13,18 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 public class CosumerController {
 
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+//    public static final String PAYMENT_URL = "http://localhost:8001";
 
     @Autowired
     private RestTemplate restTemplate;
 
     @GetMapping("/comsumer/create")
     public CommonResult<PaymentVo> create(PaymentVo payment){
-        return restTemplate.postForObject(PAYMENT_URL+"/payment/savpayment",payment,CommonResult.class);
+        return restTemplate.postForObject(PAYMENT_URL+"/payment/savepayment",payment,CommonResult.class);
     }
 
-    @GetMapping("/comsumer/get")
+    @GetMapping("/comsumer/get/{id}")
     public CommonResult<PaymentVo> getPayment(@PathVariable("id")Integer id){
         return restTemplate.getForObject(PAYMENT_URL+"/payment/selectbyid/"+id,CommonResult.class);
     }

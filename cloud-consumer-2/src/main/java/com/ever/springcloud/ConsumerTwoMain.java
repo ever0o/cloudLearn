@@ -1,23 +1,20 @@
-package com.ever.payment;
+package com.ever.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @author WangY
  * @Title:
  * @Package
  * @Description:
- * @date 2020/9/1714:48
+ * @date 2020/9/2715:07
  */
 @SpringBootApplication
-@EnableEurekaClient
 @EnableDiscoveryClient
-public class PaymentMain {
-
+public class ConsumerTwoMain {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain.class,args);
+        SpringApplication.run(ConsumerTwoMain.class,args);
     }
 }

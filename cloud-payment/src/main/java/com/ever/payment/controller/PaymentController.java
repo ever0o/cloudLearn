@@ -64,4 +64,9 @@ public class PaymentController {
         });
         return discoveryClient;
     }
+
+    @GetMapping(value = "/payment/getport")
+    public String getPort(){
+        return "spring cloud port : "+serverPort;
+    }
 }

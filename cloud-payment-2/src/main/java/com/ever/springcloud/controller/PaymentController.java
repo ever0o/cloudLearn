@@ -42,4 +42,10 @@ public class PaymentController {
         log.info("查询成功");
         return new CommonResult(200,"查询成功:"+serverPort,vo);
     }
+
+    @GetMapping(value = "/payment/getport")
+    public String getPort(){
+        return "spring cloud port : "+serverPort;
+    }
+
 }

@@ -48,4 +48,8 @@ public class PaymentController {
         return "spring cloud port : "+serverPort;
     }
 
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB(){
+        return serverPort;
+    }
 }

@@ -20,6 +20,7 @@
       <module>cloud-payment-4</module>
     <module>cloud-consumer-3</module>
       <module>cloud-consumer-4</module>
+      <module>cloud-consumer-feign-5</module>
   </modules>
   <packaging>pom</packaging>
 

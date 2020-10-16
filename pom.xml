@@ -23,6 +23,7 @@
       <module>cloud-consumer-feign-5</module>
     <module>cloud-payment-hystrix-5</module>
     <module>cloud-payment-hystrix-6</module>
+      <module>cloud-consumer-hystrix-6</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -21,3 +21,6 @@ eureka:
 logging:
   level:
     com.ever.springcloud.service.PaymentService: debug
+feign:
+  hystrix:
+    enabled: true

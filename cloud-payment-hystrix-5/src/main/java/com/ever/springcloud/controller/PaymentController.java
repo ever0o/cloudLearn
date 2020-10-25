@@ -39,4 +39,11 @@ public class PaymentController {
         return serverPort+":"+result;
     }
 
+    @GetMapping(value = "/payment/circuit/fallback/{id}")
+    public String paymentInfo_fallback(@PathVariable("id")Integer id){
+        String result = paymentService.paymentCircuitBreaker(id);
+        log.info("timeout*****result:"+result);
+        return serverPort+":"+result;
+    }
+
 }

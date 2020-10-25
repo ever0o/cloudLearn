@@ -1,5 +1,7 @@
 package com.ever.springcloud.service;
 
+import org.springframework.web.bind.annotation.PathVariable;
+
 /**
  * @author WangY
  * @Title:
@@ -10,4 +12,5 @@ package com.ever.springcloud.service;
 public interface PaymentService {
     String paymentInfo_OK(Integer id);
     String paymentInfo_TimeOut(Integer id);
+    String paymentCircuitBreaker(Integer id);
 }

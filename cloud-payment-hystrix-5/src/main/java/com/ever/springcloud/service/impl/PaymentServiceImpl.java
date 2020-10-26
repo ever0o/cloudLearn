@@ -41,10 +41,10 @@ public class PaymentServiceImpl implements PaymentService {
         return "线程池: " +Thread.currentThread().getName()+" paymentInfo_TimeoutHandler,id"+id;
     }
     @HystrixCommand(fallbackMethod = "paymentCircuitBreaker_fallback",commandProperties = {
-            @HystrixProperty(name = "circuitBreaker.enabled",value = "true"),
-            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold",value = "10"),
-            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds",value = "10000"),
-            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage",value = "60")
+            @HystrixProperty(name = "circuitBreaker.enabled",value = "true"),//开启熔断器
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold",value = "10"),//请求次数超过峰值
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds",value = "10000"),//时间范围
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage",value = "60")//失败率达到多少后跳闸
     })
     public String paymentCircuitBreaker(Integer id){
         if (id < 0){

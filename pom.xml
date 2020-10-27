@@ -25,7 +25,7 @@
     <module>cloud-payment-hystrix-6</module>
       <module>cloud-consumer-hystrix-6</module>
       <module>cloud-consumer-hystrix-dashboard</module>
-    <module>cloud-gatway</module>
+    <module>cloud-gateway</module>
   </modules>
   <packaging>pom</packaging>
 

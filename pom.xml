@@ -26,6 +26,9 @@
       <module>cloud-consumer-hystrix-6</module>
       <module>cloud-consumer-hystrix-dashboard</module>
     <module>cloud-gateway</module>
+      <module>cloud-config-center</module>
+      <module>cloud-config-client-1</module>
+      <module>cloud-config-client-2</module>
   </modules>
   <packaging>pom</packaging>
 

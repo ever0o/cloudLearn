@@ -15,20 +15,21 @@
     <module>cloud-eureka-server-2</module>
     <module>cloud-eureka-server-3</module>
     <module>cloud-payment-2</module>
-      <module>cloud-payment-3</module>
-      <module>cloud-consumer-2</module>
-      <module>cloud-payment-4</module>
+    <module>cloud-payment-3</module>
+    <module>cloud-consumer-2</module>
+    <module>cloud-payment-4</module>
     <module>cloud-consumer-3</module>
-      <module>cloud-consumer-4</module>
-      <module>cloud-consumer-feign-5</module>
+    <module>cloud-consumer-4</module>
+    <module>cloud-consumer-feign-5</module>
     <module>cloud-payment-hystrix-5</module>
     <module>cloud-payment-hystrix-6</module>
-      <module>cloud-consumer-hystrix-6</module>
-      <module>cloud-consumer-hystrix-dashboard</module>
+    <module>cloud-consumer-hystrix-6</module>
+    <module>cloud-consumer-hystrix-dashboard</module>
     <module>cloud-gateway</module>
-      <module>cloud-config-center</module>
-      <module>cloud-config-client-1</module>
-      <module>cloud-config-client-2</module>
+    <module>cloud-config-center</module>
+    <module>cloud-config-client-1</module>
+    <module>cloud-config-client-2</module>
+    <module>cloud-stream-rabbitmq-provider</module>
   </modules>
   <packaging>pom</packaging>
 

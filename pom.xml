@@ -36,6 +36,7 @@
     <module>cloudalibaba-provider-payment-2</module>
     <module>cloudalibaba-consumer-1</module>
     <module>cloudalibaba-config-1</module>
+    <module>cloudalibaba-sentinel-service-1</module>
   </modules>
   <packaging>pom</packaging>
 

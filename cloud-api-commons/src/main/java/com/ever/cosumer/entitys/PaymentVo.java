@@ -15,4 +15,12 @@ import java.io.Serializable;
 public class PaymentVo implements Serializable {
     private Integer id;
     private String serial;
+
+    public PaymentVo() {
+    }
+
+    public PaymentVo(Integer id, String serial) {
+        this.id = id;
+        this.serial = serial;
+    }
 }

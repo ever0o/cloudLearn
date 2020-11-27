@@ -37,6 +37,7 @@
     <module>cloudalibaba-consumer-1</module>
     <module>cloudalibaba-config-1</module>
     <module>cloudalibaba-sentinel-service-1</module>
+      <module>seata-order-service</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -20,6 +20,11 @@ public class CommonResult<T> implements Serializable {
     public CommonResult() {
     }
 
+    public CommonResult(Integer resultCode, String resultMsg) {
+        this.resultCode = resultCode;
+        this.resultMsg = resultMsg;
+    }
+
     public CommonResult(Integer resultCode, String resultMsg, T t) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;

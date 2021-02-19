@@ -31,13 +31,15 @@
     <module>cloud-config-client-2</module>
     <module>cloud-stream-rabbitmq-provider</module>
     <module>cloud-stream-rabbitmq-consumer</module>
-      <module>cloud-stream-rabbitmq-consumer-2</module>
-      <module>cloudalibaba-provider-payment-1</module>
+    <module>cloud-stream-rabbitmq-consumer-2</module>
+    <module>cloudalibaba-provider-payment-1</module>
     <module>cloudalibaba-provider-payment-2</module>
     <module>cloudalibaba-consumer-1</module>
     <module>cloudalibaba-config-1</module>
     <module>cloudalibaba-sentinel-service-1</module>
-      <module>seata-order-service</module>
+    <module>seata-order-service</module>
+    <module>seata-storage-service</module>
+    <module>seata-account-service</module>
   </modules>
   <packaging>pom</packaging>
 

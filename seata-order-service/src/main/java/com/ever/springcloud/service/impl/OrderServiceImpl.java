@@ -5,6 +5,7 @@ import com.ever.springcloud.entity.Order;
 import com.ever.springcloud.service.AccountService;
 import com.ever.springcloud.service.OrderService;
 import com.ever.springcloud.service.StorageService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,6 +31,7 @@ public class OrderServiceImpl implements OrderService {
     private StorageService storageService;
 
     @Override
+    @GlobalTransactional(name = "fxp_tx_group",rollbackFor = Exception.class)
     public void create(Order order) {
         log.info("------开始新建订单");
         orderDao.create(order);
